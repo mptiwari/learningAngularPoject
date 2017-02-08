@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app = "Demo">
+<head>
+<meta charset="ISO-8859-1">
+<title>2-way-data-binding</title>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="modules/route.js"></script>
+
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td colspan="2">
+				<h1>My Route page in angular</h1>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#/home">Home</a> <br/>
+				<a href="#/courses">Courses</a> <br/>
+				<a href="#/students">Students</a> <br/>
+			</td>
+				<ng-view></ng-view>
+			<td>
+			
+			</td>
+		</tr>	
+	</table>
+	
+</body>
+</html>
