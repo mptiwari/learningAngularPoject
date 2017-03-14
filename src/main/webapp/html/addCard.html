@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Adding Card</title>
+</head>
+<body >
+<div ng-controller="myController">
+	<table>
+	<div>
+	 <h3> Add New Card </h3> 
+		</div>
+		<tr>
+			<td>Name</td>
+			<td>
+			<input type="text" ng-model="name">
+			</td>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td>
+			<input type="text" ng-model="age">
+			</td>
+		</tr>
+		<tr>
+			<td>Card No</td>
+			<td>
+			<input type="text" ng-model="cardno">
+			</td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>
+			<input type="text" ng-model="gender">
+			</td>
+		</tr>
+		<tr>
+      <td>
+      	<button class="btn-panel-big" ng-click="addCard()"> Add New Card </button>
+	</td>
+	</tr>
+	</table>
+	</div>
+</body>
+</html>
+
+

@@ -1,5 +1,4 @@
-var myRouteApp = angular.module("Demo", ["ngRoute"])
-					.config(function($routeProvider) {
+myApp.config(function($routeProvider) {
 						$routeProvider
 							.when("/home" ,{
 								templateUrl: "html/home.html"
@@ -9,5 +8,14 @@ var myRouteApp = angular.module("Demo", ["ngRoute"])
 							})
 							.when("/courses" ,{
 								templateUrl: "html/courses.html"
+							})
+							.when("/addCard" ,{
+								templateUrl: "html/addCard.html"
+							})
+							.when("/viewCard" ,{
+								templateUrl: "html/viewCard.html"
+							})
+							.when("/editCard" ,{
+								templateUrl: "html/editCard.html"
 							})
 					})

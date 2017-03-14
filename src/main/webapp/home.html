@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html ng-app = "Demo">
+<html ng-app = "myApp">
 <head>
 <meta charset="ISO-8859-1">
-<title>2-way-data-binding</title>
+<title>myrepo app</title>
+
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/MyModule1.js"></script>
 <script type="text/javascript" src="modules/route.js"></script>
 
 </head>
 <body>
-
 	<table>
 		<tr>
 			<td colspan="2">
-				<h1>My Route page in angular</h1>
+				<h1>MyRepo Application</h1>
 			</td>
 		</tr>
 		<tr>
@@ -21,10 +22,11 @@
 				<a href="#/home">Home</a> <br/>
 				<a href="#/courses">Courses</a> <br/>
 				<a href="#/students">Students</a> <br/>
+				<a href="#/addCard">AddCard</a> <br/>
+				<a href="#/viewCard">Show Cards</a> <br/>
 			</td>
-				<ng-view></ng-view>
+			<ng-view></ng-view>
 			<td>
-			
 			</td>
 		</tr>	
 	</table>

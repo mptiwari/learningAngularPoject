@@ -30,7 +30,6 @@
 		<form-login login-page='/login.html' default-target-url='/main.html'
 			always-use-default-target='false' authentication-failure-url="/loginFailure.html" />
 
-
 		<logout logout-success-url="/login.html" delete-cookies="JSESSIONID"
 			invalidate-session="true" />
 	</http>
@@ -41,7 +40,6 @@
 	<beans:bean id="customAuthenticationProvider"
 		class="com.nisum.employee.ref.security.authentication.CustomAuthenticationProvider">
 	</beans:bean>
-	
 
 	<authentication-manager>
 		<authentication-provider ref="customAuthenticationProvider" />
@@ -61,7 +59,6 @@
 
 	<beans:bean id="userDetailsContextMapper"
 		class="com.nisum.employee.ref.security.authorization.UserDetailsContextMapperImpl" />
-
 
 	<beans:bean id="exceptionStatusCodeMappingBean"
 		class="com.nisum.employee.ref.util.SecurityExceptionResponseErrorCodeMappingBean">
